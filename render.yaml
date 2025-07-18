@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: signal-bot
+    env: python
+    buildCommand: ""
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN
+      - key: CHAT_ID
+        value: YOUR_CHAT_ID
